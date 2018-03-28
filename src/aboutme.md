@@ -1,4 +1,4 @@
-# Sobre mim
+# Sobre
 
 Fundado em 2017, o VNLabs (VoIP & Network Labs) é um laboratório de
  pesquisa e desenvolvimento de soluções VoIP e Internetworking, que busca

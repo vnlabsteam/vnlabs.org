@@ -1,7 +1,7 @@
 # VNLabs.org
 
 - [Introdução](./introduction.md)
-- [Sobre mim](./aboutme.md)
+- [Sobre](./aboutme.md)
 - [Pesquisas e desenvolvimento SIP](./aboutme.md)
     - [Protocolo SIP](./aboutme.md)
     - [SIP Redirect](./aboutme.md)
