@@ -13,14 +13,9 @@ pipelines:
             - tar -xf mdbook-v0.1.5-x86_64-unknown-linux-gnu.tar.gz
             - mv mdbook /usr/bin/
             - mdbook build
-            - git config --global user.email "contato@consulteportabilidade.com"
-            - git config --global user.name "RouteCall CI"
+            - git config --global user.email "vnlabs.org@gmail.com"
+            - git config --global user.name "VNLabs CI"
             - mkdir /tmp/builded_book
             - mv book /tmp/builded_book
             - cd /tmp/builded_book/book
-            - touch .static
-            - git init .
-            - git remote add dokku ssh://dokku@routecall.io:49999/api-docs
-            - git add .
-            - git commit -m '[ci] deploy docs'
-            - git push dokku master -f
+            - scp -P49999 "./*" deploy-bitbucket@vnlabs.org:/usr/local/www/vnlabs.org/
