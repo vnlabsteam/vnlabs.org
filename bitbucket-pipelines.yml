@@ -1,0 +1,26 @@
+# This is a sample build configuration for Other.
+# Check our guides at https://confluence.atlassian.com/x/5Q4SMw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+# image: atlassian/default-image:latest
+
+pipelines:
+  default:
+    - step:
+        script:
+            - wget https://github.com/rust-lang-nursery/mdBook/releases/download/v0.1.5/mdbook-v0.1.5-x86_64-unknown-linux-gnu.tar.gz
+            - tar -xf mdbook-v0.1.5-x86_64-unknown-linux-gnu.tar.gz
+            - mv mdbook /usr/bin/
+            - mdbook build
+            - git config --global user.email "contato@consulteportabilidade.com"
+            - git config --global user.name "RouteCall CI"
+            - mkdir /tmp/builded_book
+            - mv book /tmp/builded_book
+            - cd /tmp/builded_book/book
+            - touch .static
+            - git init .
+            - git remote add dokku ssh://dokku@routecall.io:49999/api-docs
+            - git add .
+            - git commit -m '[ci] deploy docs'
+            - git push dokku master -f
