@@ -18,4 +18,4 @@ pipelines:
             - mkdir /tmp/builded_book
             - mv book /tmp/builded_book
             - cd /tmp/builded_book/book
-            - scp -P49999 "*" deploy-bitbucket@vnlabs.org:/usr/local/www/vnlabs.org/
+            - scp -P49999 * deploy-bitbucket@vnlabs.org:/usr/local/www/vnlabs.org/
