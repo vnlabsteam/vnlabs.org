@@ -2,7 +2,8 @@
 
 - [Introdução](./introduction.md)
 - [Sobre](./aboutme.md)
-- [SIP Redirect](./sip_redirect.md)
-    - [Conceito](./sip_redirect_concept.md)
-    - [Visão geral da operação](./sip_redirect_overview.md)
-- [Pilha De Protocolos TCP/IP ](./tcpip-protocol-suite.md)
+- [Posts](./posts.md)
+  - [OpenSIPS](./posts/opensips.md)
+    - [SBC com OpenSIPS 1/5](./posts/opensips/opensips_sbc_intro.md)
+    - [SBC com OpenSIPS 2/5](./posts/opensips/opensips_sbc_topology_hiding.md)
+    - [SBC com OpenSIPS 3/5](./posts/opensips/opensips_sbc_rtpengine.md)
