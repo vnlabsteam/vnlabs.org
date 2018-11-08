@@ -24,4 +24,4 @@ jobs:
       - run:
           name: Public the site
           command: |
-            scp -i ~/.ssh/${SSH_KEY} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -P${SSH_PORT} -r * ${SSH_USER}@${SSH_HOST}:${SSH_VNLABS_DIR}
+            scp -i ~/.ssh/${SSH_KEY} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -P${SSH_PORT} -r /tmp/builded_book/book/* ${SSH_USER}@${SSH_HOST}:${SSH_VNLABS_DIR}
