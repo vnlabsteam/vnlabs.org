@@ -1,4 +1,4 @@
-# SBC com OpenSIPS 1/5 - Introdução
+# SBC com OpenSIPS 1/6 - Introdução
 
 Session Border Crontroller, mais conhecido como SBC, é um software responsável
 por implementar uma série requisitos relacionados ao controle de borda de rede

@@ -1,1 +1,1 @@
-# SBC com OpenSIPS 2/5
+# SBC com OpenSIPS 2/6
